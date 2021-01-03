@@ -1,1 +1,8 @@
-# Movie-Recommendation-System
+# Requirements
+flask
+
+flask table
+
+pandas
+
+numpy
