@@ -1,0 +1,158 @@
+.container {
+    position: absolute;
+    font-family: Arial;
+    align-self: center;
+   
+    right: 20%;
+    background-color: rgba(0, 0, 0, 0.829);
+    position: absolute;
+    width: 55%;
+  
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    top: 25%;
+    bottom:40%;
+    
+  }
+  
+  .ratinghead{
+    color: antiquewhite;
+    background-color:rgba(0, 0, 0, 0.829);
+    position: relative;
+    font-family: Arial;
+    align-self: center;
+    height: 100px;
+    padding-top: 3%;
+    text-align: center;
+    font-size: 50px;
+    width: 1334px;
+    
+  }
+  .ratingfoot{
+    background-color:rgba(0, 0, 0, 0.829);
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+    padding: 3%;
+    width: 1334px ;
+  }
+  img{
+    width:100vw;
+    height:97vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+  }
+  body{
+    background-image: url(/templates/bg-poster.jpg);
+    margin: 20px;
+    background-attachment: fixed;
+    width: auto;
+    
+  }
+  
+  
+  
+  table{
+    background-color: rgba(0, 0, 0, 0.829);
+    
+    padding: 3 px;
+    width: 100%;
+    border-spacing: 0 15px;
+    border-collapse: separate;
+    border-color: black;
+  
+  }
+  th{
+    padding: 20px;
+    border-spacing: 12px;
+    align-content: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    
+  }
+  h1{
+    text-align: center;
+  
+  }
+  .heading{
+    font-size: 40px;
+    line-height: 7px ;
+    text-align: center;
+  }
+  .button {
+    background-color: rgb(255, 251, 251);
+    border: none;
+    color:black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+  }
+  .flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  p{
+    font-size: 4px;
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color:white;
+    color: white;
+    
+    transform: rotateY(180deg);
+  }
+  
+  
+  

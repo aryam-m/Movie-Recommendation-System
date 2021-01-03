@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <html lang="en" dir="ltr">
+        <meta charset="utf-8">
+        <title>Recommendations</title>
+        <style type="text/css">    
+          body
+          {
+            
+            padding: 0px;
+            background: url("/templates/bg-poster.jpg");
+            margin: 20px;
+            background-attachment: fixed;
+            width: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            } 
+            .frame{
+                background-color: rgba(0, 0, 0, 0.829);
+  
+                padding: 3 px;
+                width: 100%;
+                border-spacing: 0 15px;
+                border-collapse: separate;
+
+            }
+        </style>  
+    </head>
+
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+        <div class="frame">
+            <h1><font color="black"><strong>Here are the top-20 movies that you'll most probably like:</strong></font></h1>
+            <p>{{ table }}</p>
+            </div>
+        {% endblock %}
+    </body>
+</html>
